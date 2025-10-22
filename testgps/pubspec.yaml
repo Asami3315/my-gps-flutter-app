@@ -1,0 +1,32 @@
+name: testgps
+description: "A lightweight GPS testing app."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  # Payment and Firebase dependencies
+  flutter_stripe: ^10.1.1
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_functions: ^4.6.0
+  shared_preferences: ^2.2.2
+  # Minimal dependencies for performance
+  # Add only essential packages as needed
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Removed flutter_lints to reduce build time
+  # flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true  # Enable for icons and Material 3
+  # No assets section - keeping minimal
+  # assets:
+  #   - images/
